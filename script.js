@@ -1,6 +1,4 @@
-// ═══════════════════════════════════════════════
-//  STOCK DATA (simulated real-world values)
-// ═══════════════════════════════════════════════
+
 const STOCKS = {
   AAPL: { name: "Apple Inc.", price: 189.43, change: 1.23, sector: "Tech" },
   MSFT: { name: "Microsoft", price: 415.28, change: 0.87, sector: "Tech" },
@@ -183,7 +181,6 @@ function drawMainChart() {
   const dates = genDates(days);
   const up = d.change >= 0;
 
-  // SMA20 overlay
   const sma = prices.map((_, i) => {
     if (i < 19) return null;
     return prices.slice(i - 19, i + 1).reduce((a, b) => a + b, 0) / 20;
