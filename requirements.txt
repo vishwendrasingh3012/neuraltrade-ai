@@ -1,0 +1,14 @@
+flask==3.0.0
+flask-cors==4.0.0
+yfinance==0.2.36
+numpy==1.26.4
+scikit-learn==1.4.0
+pandas==2.1.4
+
+# Optional — for production GenAI features
+# transformers==4.37.0      # BERT, GPT, T5
+# torch==2.1.2              # PyTorch backend
+# faiss-cpu==1.7.4          # Vector search
+# tensorflow==2.15.0        # LSTM/ANN via TF
+# sentence-transformers==2.3.0  # Embeddings for FAISS
+# anthropic==0.17.0         # Claude API for analysis text
